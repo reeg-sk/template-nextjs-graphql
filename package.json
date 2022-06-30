@@ -1,0 +1,24 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "fe:dev": "npm run dev --workspace=frontend",
+    "be:start": "npm run start --workspace=backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reeg-sk/blog.git"
+  },
+  "keywords": [],
+  "author": "reeg-sk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reeg-sk/blog/issues"
+  },
+  "homepage": "https://github.com/reeg-sk/blog#readme"
+}
