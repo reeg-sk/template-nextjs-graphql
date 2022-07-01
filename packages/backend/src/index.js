@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server');
+const { gql } = require('apollo-server')
 
 
 const typeDefs = gql`
@@ -9,7 +9,7 @@ const typeDefs = gql`
   type Query {
     books: [Book]
   }
-`;
+`
 
 const books = [
   {
@@ -20,12 +20,12 @@ const books = [
     title: 'City of Glass',
     author: 'Paul Auster',
   },
-];
+]
 
 const resolvers = {
   Query: {
     books: () => books,
   },
-};
+}
 
-module.exports = { typeDefs, resolvers };
+module.exports = { typeDefs, resolvers }
